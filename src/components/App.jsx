@@ -1,5 +1,5 @@
 import React, { Component } from 'react'
-// import Section from '../components/Section';
+import Section from '../components/Section';
 // import FeedbackOptions from '../components/FeedbackOptions';
 // import Notification from '../components/Notification';
 // import Statistics from '../components/Statistics';
@@ -32,13 +32,13 @@ state = {
     return (
       <div >
         <h2>GHbdntnnnnnnn</h2>
-        {/* <Section title='Please leave feedback'>
-          <FeedbackOptions
+        <Section title='Please leave feedback'>
+          {/* <FeedbackOptions
             options={this.state}
             onLeaveFeedback={this.onLeaveFeedback}
-          />
+          /> */}
         </Section>
-
+{/* 
         <Section title='Statistics'>
           {!total
             ? <Notification message='There is no feedback'/>
