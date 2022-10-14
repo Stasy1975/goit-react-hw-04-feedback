@@ -31,8 +31,7 @@ state = {
 
     return (
       <div >
-        <h2>GHbdntnnnnnnn</h2>
-        <Section title='Please leave feedback'>
+         <Section title='Please leave feedback'>
           <FeedbackOptions
             options={this.state}
             onLeaveFeedback={this.onLeaveFeedback}
