@@ -1,6 +1,6 @@
 import React, { Component } from 'react'
 import Section from '../components/Section';
-// import FeedbackOptions from '../components/FeedbackOptions';
+import FeedbackOptions from '../components/FeedbackOptions';
 // import Notification from '../components/Notification';
 // import Statistics from '../components/Statistics';
 
@@ -33,10 +33,10 @@ state = {
       <div >
         <h2>GHbdntnnnnnnn</h2>
         <Section title='Please leave feedback'>
-          {/* <FeedbackOptions
+          <FeedbackOptions
             options={this.state}
             onLeaveFeedback={this.onLeaveFeedback}
-          /> */}
+          />
         </Section>
 {/* 
         <Section title='Statistics'>
