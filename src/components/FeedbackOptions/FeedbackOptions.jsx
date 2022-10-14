@@ -1,14 +1,14 @@
 import React from 'react';
-import PropTypes from 'prop-types';
+// import PropTypes from 'prop-types';
 import './FeedbackOptions.css'
-import confetti from "https://cdn.skypack.dev/canvas-confetti@1";
+// import confetti from "https://cdn.skypack.dev/canvas-confetti@1";
 
 const FeedbackOptions = ({options, onLeaveFeedback}) => {
   const onClickBtn = (type) => () => {
-    confetti({
-      particleCount: 100,
-      spread: 150
-    });
+    // confetti({
+    //   particleCount: 100,
+    //   spread: 150
+    // });
     onLeaveFeedback(type);
   };
 
@@ -32,9 +32,9 @@ const FeedbackOptions = ({options, onLeaveFeedback}) => {
   );
 };
 
-FeedbackOptions.propTypes = {
-  options: PropTypes.objectOf(PropTypes.number).isRequired,
-  onLeaveFeedback: PropTypes.func.isRequired,
-};
+// FeedbackOptions.propTypes = {
+//   options: PropTypes.objectOf(PropTypes.number).isRequired,
+//   onLeaveFeedback: PropTypes.func.isRequired,
+// };
 
 export default FeedbackOptions;
