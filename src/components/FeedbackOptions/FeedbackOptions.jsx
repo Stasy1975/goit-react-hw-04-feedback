@@ -5,10 +5,10 @@ import './FeedbackOptions.css'
 
 const FeedbackOptions = ({options, onLeaveFeedback}) => {
   const onClickBtn = (type) => () => {
-    // confetti({
+    //  confetti({
     //   particleCount: 100,
-    //   spread: 150
-    // });
+    //    spread: 150
+    //      });
     onLeaveFeedback(type);
   };
 
