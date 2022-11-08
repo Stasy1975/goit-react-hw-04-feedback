@@ -1,21 +1,22 @@
 import React from 'react';
 import PropTypes from 'prop-types';
 import './FeedbackOptions.css'
-// import confetti from "https://cdn.skypack.dev/canvas-confetti@1";
+import confetti from "https://cdn.skypack.dev/canvas-confetti@1";
 
-const FeedbackOptions = ({options, onLeaveFeedback}) => {
+const FeedbackOptions = ({ types, onLeaveFeedback }) => {
+
   const onClickBtn = (type) => () => {
-    //  confetti({
-    //   particleCount: 100,
-    //    spread: 150
-    //      });
+     confetti({
+      particleCount: 100,
+       spread: 150
+         });
     onLeaveFeedback(type);
   };
 
   return (
     <ul className="List">
-          {Object.keys(options).map(type => {
-          console.log(type)
+      {types.map( (type ) => {
+        
         return (
           <li className='Item'
             key={type}
@@ -33,7 +34,7 @@ const FeedbackOptions = ({options, onLeaveFeedback}) => {
 };
 
 FeedbackOptions.propTypes = {
-  options: PropTypes.objectOf(PropTypes.number).isRequired,
+  types: PropTypes.array.isRequired,
   onLeaveFeedback: PropTypes.func.isRequired,
 };
 
